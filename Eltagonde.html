@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Multimedia Arts Portfolio</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #222, #444);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            margin: 10px 0;
+            font-size: 42px;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease;
+        }
+        header p {
+            font-size: 18px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+        .photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            border-left: 5px solid #222;
+            padding-left: 10px;
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #222;
+        }
+
+        /* Projects */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        .project img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .project h3 {
+            margin: 15px;
+        }
+        .project p {
+            margin: 0 15px 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 12px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        li:hover {
+            transform: translateX(5px);
+            background: #f9f9f9;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/547020770_1875896060012878_7672885883425357383_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEoi_HHjNjyJgfvumFXO975d3shqx40hxR3eyGrHjSHFLgUD4B8NEYQ-Q8fbmfHJ6FfNv0yCCkB1zP9fKujVyK-&_nc_ohc=qfip6gC2MLsQ7kNvwHEYYg5&_nc_oc=AdmzK3s9h6WPrKF4SvYNYAcgwwlApYyVs1FZyB3dfQ_sGVoHZcEE680k3VHXlRM2e5Q&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=EYhU4yKXJNeJCS6VC6HefQ&oh=00_AfYIty2qMJ9h7BzQIZrbhgXGFJuWxdGs4brWbY6iRy2XEg&oe=68D60169" alt="Name" class="photo">
+        <h1>Cedric S. Eltagonde</h1>
+        <p>Aspiring Multimedia Artist passionate about creativity</p>
+    </header>
+
+    <section>
+        <h2>Top Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/481225153_614607377992276_5716046563868969474_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG5gaX_cvjzeWejUfRgnRvXfgFBeK1Jrfx-AUF4rUmt_HCqGofsiZnU2b4SfX0biAEouMCVBJ3IcWaJi1g7A7AX&_nc_ohc=NPRbxlPRnWoQ7kNvwGiYRfH&_nc_oc=AdmodPe5H4BORCoHprd8PdFKDqaA9fSKldpF9P7wm3LTbtSKkkcNYvxPGyBAWR_ASB4&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=YG2z_f_7p1BsAzJTrLhpCw&oh=00_Afa6kviHX7-N9dZtFLj9ssJp6C9UXaCqXurkJM96l19_ww&oe=68D619B7" alt="Project 1 Screenshot">
+                <h3>Cyberpunk Diner</h3>
+                <p>My best hardsurfaced building along with lighting and rendering.</p>
+            </div>
+
+            <div class="project">
+                <img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/473831132_1227970219038880_1927079674396522577_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEPh4cYHEVDhnB0clzhG1bvRXl4m81MsnpFeXibzUyyeiSrtw9f9qSH7DKSGvdAr6nwowEn7vGYkClh_KzRi_Ji&_nc_ohc=w-WJ1pKsPJsQ7kNvwHQXR9Q&_nc_oc=AdnzkXqMoULsemmY_0sa9GNDw4YJLngbwJJIJGAG5tArsoJ_wAHXMRCpQpOyXqvt0zg&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_gid=JBJE51lKuXIOFjkPSj4ucw&oh=00_Afb80JMBEyMkDzwB9cU7zxus2t_8LQQVdmX7WpCRu3eVyg&oe=68D6052A" alt="Project 2 Screenshot">
+                <h3>Medieval House</h3>
+                <p>Modeled it using 3ds Maya and mostly this is just a practice seesion.</p>
+            </div>
+
+            <div class="project">
+                <img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/283365832_622405539595354_24580436741550724_n.png?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFwBwpz5xQHqML14Q2CxILRtDeXSkPr7u-0N5dKQ-vu7yjDgHspWulUquSSQfUKKP1maZvXvfcqb1kpYiaq4_tO&_nc_ohc=IKjkhBDQbBsQ7kNvwEy-cFt&_nc_oc=Adm3XdGQQDtEfVzaU4y7iMQu6dXTJiq0gY7zN9H9Rzgoy9jl1CtDsW1PV8aJNQ9Q360&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=zV6jdTFb6arBcw0jIA_Kcg&oh=00_AfYsB6UPAKYAZb9yf_NIacMvXMtyoE-_HYg86a6VumjqmQ&oe=68D623F3" alt="Project 3 Screenshot">
+                <h3>Skull Witch</h3>
+                <p>This is my first sculpted character using ZBrush software.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>3D Environment Art</li>
+            <li>Adobe Photoshop & Illustrator</li>
+            <li>Blender & Maya</li>
+            <li>Animation & Motion Graphics</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Achievements / Awards</h2>
+        <ul>
+            <li>Dean’s List – Multimedia Arts 2024</li>
+            <li>Featured Artist on MMCM</li>
+        </ul>
+    </section>
+</body>
+</html>
